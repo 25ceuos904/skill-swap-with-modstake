@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #F8F1F5;
+  --color-card: #E1CBD7;
+  --color-primary: #C38EB4;
+  --color-secondary: #86A8CF;
+  --color-text: #26425A;
+  --color-muted: #5A7288;
+}
+
+@layer base {
+  body {
+    background-color: #F8F1F5;
+    color: #26425A;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Pastel Theme Custom Utility Classes */
+.glass-card {
+  background-color: #E1CBD7;
+  border: 1px solid #D4B8C9;
+  box-shadow: 0 4px 20px -2px rgba(195, 142, 180, 0.15);
+}
+
+.glass-nav {
+  background-color: rgba(225, 203, 215, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #D4B8C9;
+}
+
+.gradient-text {
+  color: #26425A;
+  font-weight: 800;
+}
+
+.gradient-button {
+  background-color: #C38EB4;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 14px 0 rgba(195, 142, 180, 0.35);
+}
+
+.gradient-button:hover {
+  background-color: #B37AA4;
+}
+
+.gradient-button:active {
+  transform: scale(0.97);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F1F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C38EB4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B37AA4;
+}
